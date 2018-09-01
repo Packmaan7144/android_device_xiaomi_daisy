@@ -16,7 +16,8 @@
 # Inherit from common msm8953-common
 -include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/tissot
+DEVICE_PATH := device/xiaomi/daisy
+
 
 # Filesystem
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -24,10 +25,10 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := tissot_defconfig
+TARGET_KERNEL_CONFIG := daisy_defconfig
 
 # Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
+BOARD_USERDATAIMAGE_PARTITION_SIZE :=  # 25765059584 - 16384
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
