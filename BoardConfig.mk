@@ -25,7 +25,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := daisy_defconfig
+TARGET_KERNEL_CONFIG := daisy-perf_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE :=  # 25765059584 - 16384
@@ -43,4 +43,4 @@ BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/xiaomi/tissot/BoardConfigVendor.mk
+-include vendor/xiaomi/daisy/BoardConfigVendor.mk
